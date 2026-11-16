@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="aniket_icon_bg">#050507</color>
+    <color name="aniket_navy_bg">#080D1A</color>
+    <color name="aniket_surface">#11192E</color>
+    <color name="aniket_purple">#7C3AED</color>
+    <color name="aniket_indigo">#4F46E5</color>
+    <color name="aniket_royal_blue">#273B8C</color>
+    <color name="aniket_text_primary">#F8FAFC</color>
+    <color name="aniket_text_secondary">#94A3B8</color>
+    <color name="aniket_border">#253252</color>
+</resources>

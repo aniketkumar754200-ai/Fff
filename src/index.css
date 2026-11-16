@@ -1,0 +1,195 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+  }
+}
+
+/* Custom subtle scrollbars */
+.aniket-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.aniket-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.aniket-scroll::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.25);
+  border-radius: 9999px;
+}
+
+.aniket-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.42);
+}
+
+/* Markdown formatting inside assistant messages */
+.aniket-prose {
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+.aniket-prose > *:first-child {
+  margin-top: 0;
+}
+
+.aniket-prose > *:last-child {
+  margin-bottom: 0;
+}
+
+.aniket-prose p {
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+
+.aniket-prose h1,
+.aniket-prose h2,
+.aniket-prose h3,
+.aniket-prose h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  margin-top: 1.125rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.35;
+}
+
+.aniket-prose h1 {
+  font-size: 1.25rem;
+}
+
+.aniket-prose h2 {
+  font-size: 1.125rem;
+}
+
+.aniket-prose h3 {
+  font-size: 1rem;
+}
+
+.aniket-prose ul,
+.aniket-prose ol {
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+  padding-left: 1.375rem;
+}
+
+.aniket-prose ul {
+  list-style-type: disc;
+}
+
+.aniket-prose ol {
+  list-style-type: decimal;
+}
+
+.aniket-prose li {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.aniket-prose li::marker {
+  color: rgb(139, 92, 246);
+  font-weight: 600;
+}
+
+.aniket-prose strong {
+  font-weight: 600;
+}
+
+.aniket-prose a {
+  color: rgb(109, 40, 217);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.dark .aniket-prose a {
+  color: rgb(167, 139, 250);
+}
+
+.aniket-prose blockquote {
+  margin: 0.75rem 0;
+  padding: 0.625rem 0.875rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  background: rgba(124, 58, 237, 0.05);
+}
+
+.dark .aniket-prose blockquote {
+  border-color: rgba(148, 163, 184, 0.16);
+  background: rgba(139, 92, 246, 0.08);
+}
+
+.aniket-prose :not(pre) > code {
+  font-family: var(--font-mono);
+  font-size: 0.84em;
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.375rem;
+  background: rgba(100, 116, 139, 0.14);
+}
+
+.dark .aniket-prose :not(pre) > code {
+  background: rgba(148, 163, 184, 0.16);
+}
+
+.aniket-prose pre {
+  margin: 0.75rem 0;
+  padding: 0.875rem 1rem;
+  border-radius: 0.875rem;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  background: #0b1120;
+  color: #e2e8f0;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.aniket-prose table {
+  width: 100%;
+  margin: 0.75rem 0;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  display: block;
+  overflow-x: auto;
+}
+
+.aniket-prose th,
+.aniket-prose td {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  text-align: left;
+}
+
+.aniket-prose th {
+  font-weight: 600;
+  background: rgba(100, 116, 139, 0.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

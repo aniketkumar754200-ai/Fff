@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.AniketAI" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/aniket_purple</item>
+        <item name="colorPrimaryContainer">@color/aniket_royal_blue</item>
+        <item name="colorSecondary">@color/aniket_indigo</item>
+        <item name="android:windowBackground">@color/aniket_navy_bg</item>
+        <item name="android:statusBarColor">@color/aniket_navy_bg</item>
+        <item name="android:navigationBarColor">@color/aniket_navy_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.AniketAI.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/aniket_navy_bg</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_round</item>
+        <item name="postSplashScreenTheme">@style/Theme.AniketAI</item>
+    </style>
+</resources>

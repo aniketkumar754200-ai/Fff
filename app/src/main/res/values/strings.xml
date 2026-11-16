@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aniket AI</string>
+    <string name="loading_subtitle">Loading your personal AI assistant…</string>
+    <string name="offline_title">No Internet Connection</string>
+    <string name="offline_message">Aniket AI needs an active internet connection to chat in English, Hindi, or Hinglish. Please check your Wi-Fi or mobile data and try again.</string>
+    <string name="error_load_title">Unable to Connect</string>
+    <string name="error_load_message">Could not reach Aniket AI right now. Please check your connection and tap Retry.</string>
+    <string name="retry_button">Retry Connection</string>
+    <string name="voice_prompt">Speak in English, Hindi, or Hinglish…</string>
+    <string name="mic_permission_denied">Microphone permission is required for voice input.</string>
+</resources>

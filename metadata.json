@@ -1,0 +1,6 @@
+{
+  "name": "Aniket AI",
+  "description": "A personal AI assistant supporting English, Hindi, and Hinglish with voice input, local chat history, and clear step-by-step explanations.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

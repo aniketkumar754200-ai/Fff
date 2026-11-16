@@ -1,0 +1,17 @@
+{
+  "name": "Aniket AI",
+  "short_name": "Aniket AI",
+  "description": "Personal AI assistant supporting English, Hindi, and Hinglish with voice input and step-by-step explanations.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080D1A",
+  "theme_color": "#080D1A",
+  "icons": [
+    {
+      "src": "/src/assets/images/aniket_ai_logo_3d_1794834195022.jpg",
+      "sizes": "1024x1024",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}
